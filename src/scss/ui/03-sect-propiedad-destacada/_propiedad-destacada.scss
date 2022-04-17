@@ -2,7 +2,8 @@
 @use "../../base/mixins" as m;
 
 .propiedad-destacada{
-    margin-top: 5rem;
+    max-width: 1940px;
+    margin: 5rem  auto 0 auto;
     background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, v.$primario 50%, v.$primario 100%), url("../img/destacada.jpg");
     background-size: 100%, inherit;
     background-position: center, -79rem -21rem;
