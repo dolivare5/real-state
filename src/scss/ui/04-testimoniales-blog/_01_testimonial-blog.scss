@@ -18,3 +18,35 @@
         @include m.heading(true);
     }
 }
+
+.testimonial{
+    text-align: center;
+    &__imagen{
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    &__contenido{
+        background-color: v.$blanco;
+        margin-top: -10rem;
+        padding: 10rem 2rem;
+    }
+
+    &__nombre{
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    &__texto{
+        &:before{
+            content: '';
+            background-image: url("../img/quote.svg");
+            display: inline-block;
+            background-position: center;
+            margin-right: 1rem;
+            width: 4rem;
+            height: 4rem;
+            background-repeat: no-repeat;
+        }
+    }
+}
