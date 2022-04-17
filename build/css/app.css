@@ -561,4 +561,51 @@ p {
     background-image: linear-gradient(to right, #3b4862 0%, #3b4862 50%, #6277a1 50%, #6277a1 100%);
 }
 
+.propiedades__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+    .propiedades__grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.propiedad {
+    background-color: #FFFFFF;
+}
+
+.propiedad__imagen {
+    aspect-ratio: 10/6;
+    background-size: cover;
+}
+
+.propiedad:nth-child(1) .propiedad__imagen {
+    background-image: url("../img/propiedad_1.jpg");
+}
+
+.propiedad:nth-child(2) .propiedad__imagen {
+    background-image: url("../img/propiedad_2.jpg");
+}
+
+.propiedad:nth-child(3) .propiedad__imagen {
+    background-image: url("../img/propiedad_3.jpg");
+}
+
+.propiedad:nth-child(4) .propiedad__imagen {
+    background-image: url("../img/propiedad_4.jpg");
+}
+
+.propiedad:nth-child(5) .propiedad__imagen {
+    background-image: url("../img/propiedad_5.jpg");
+}
+
+.propiedad:nth-child(6) .propiedad__imagen {
+    background-image: url("../img/propiedad_6.jpg");
+}
+
 /*# sourceMappingURL=app.css.map */
