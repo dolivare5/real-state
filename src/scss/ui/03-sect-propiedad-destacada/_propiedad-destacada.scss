@@ -10,7 +10,15 @@
 
     @include m.tablet{
         background-image: linear-gradient(to right, transparent 0%, transparent 50%, v.$primario 50%, v.$primario 100%), url("../img/destacada.jpg");
-        background-size: 100%, cover;
+        background-position: center, -44rem;
+    }
+
+    @include m.desktop{
+        background-position: center, -46rem;
+    }
+
+    @include m.desktopXL{
+        background-position: center, -50rem -13rem;
     }
     &__grid{
         display: grid;
