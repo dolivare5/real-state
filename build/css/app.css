@@ -890,4 +890,52 @@ p {
     }
 }
 
+.footer {
+    background-color: #3b4862;
+    padding-top: 5rem;
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .footer__grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+}
+
+.footer__heading {
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.footer__texto {
+    color: #FFFFFF;
+}
+
+.footer__link {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer__link:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer__navegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__copyright {
+    background-color: #283142;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 5rem 0 0 0;
+    color: #FFFFFF;
+}
+
 /*# sourceMappingURL=app.css.map */
