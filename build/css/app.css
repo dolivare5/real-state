@@ -656,4 +656,86 @@ p {
     background-color: #283142;
 }
 
+.propiedad-destacada {
+    margin-top: 5rem;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, #3b4862 50%, #3b4862 100%), url("../img/destacada.jpg");
+    background-size: 100%, inherit;
+    background-position: center, -79rem -21rem;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .propiedad-destacada {
+        background-image: linear-gradient(to right, transparent 0%, transparent 50%, #3b4862 50%, #3b4862 100%), url("../img/destacada.jpg");
+        background-size: 100%, cover;
+    }
+}
+
+.propiedad-destacada__grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    .propiedad-destacada__grid {
+        grid-template-rows: unset;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.propiedad-destacada__contenido {
+    padding: 5rem;
+    grid-row: 2/3;
+}
+
+@media (min-width: 768px) {
+    .propiedad-destacada__contenido {
+        padding: 10rem 5rem;
+        grid-column: 2/3;
+    }
+}
+
+.propiedad-destacada__heading {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.propiedad-destacada__texto {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+}
+
+.propiedad-destacada__precio {
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.propiedad-destacada__enlace {
+    background-color: #FFFFFF;
+    padding: 1.5rem 4rem;
+    color: #3b4862;
+    margin-top: 2rem;
+    font-size: 2rem;
+    display: inline-block;
+    font-weight: 700;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    text-align: center;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .propiedad-destacada__enlace {
+        width: auto;
+    }
+}
+
+.propiedad-destacada__enlace:hover {
+    background-color: #e6e6e6;
+}
+
 /*# sourceMappingURL=app.css.map */
