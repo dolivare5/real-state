@@ -582,30 +582,78 @@ p {
 .propiedad__imagen {
     aspect-ratio: 10/6;
     background-size: cover;
+    position: relative;
 }
 
 .propiedad:nth-child(1) .propiedad__imagen {
-    background-image: url("../img/propiedad_1.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/propiedad_1.jpg");
 }
 
 .propiedad:nth-child(2) .propiedad__imagen {
-    background-image: url("../img/propiedad_2.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/propiedad_2.jpg");
 }
 
 .propiedad:nth-child(3) .propiedad__imagen {
-    background-image: url("../img/propiedad_3.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/propiedad_3.jpg");
 }
 
 .propiedad:nth-child(4) .propiedad__imagen {
-    background-image: url("../img/propiedad_4.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/propiedad_4.jpg");
 }
 
 .propiedad:nth-child(5) .propiedad__imagen {
-    background-image: url("../img/propiedad_5.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/propiedad_5.jpg");
 }
 
 .propiedad:nth-child(6) .propiedad__imagen {
-    background-image: url("../img/propiedad_6.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/propiedad_6.jpg");
+}
+
+.propiedad__nombre {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    color: #FFFFFF;
+    font-size: 2.4rem;
+}
+
+.propiedad__contenido {
+    padding: 2rem;
+}
+
+.propiedad__texto {
+    margin-bottom: 0;
+}
+
+.propiedad__precio {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.propiedad__enlace {
+    background-color: #3b4862;
+    padding: 1.5rem 4rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    font-size: 2rem;
+    display: inline-block;
+    font-weight: 700;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .propiedad__enlace {
+        width: auto;
+    }
+}
+
+.propiedad__enlace:hover {
+    background-color: #283142;
 }
 
 /*# sourceMappingURL=app.css.map */
